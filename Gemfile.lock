@@ -11,6 +11,8 @@ GEM
     activeresource (2.3.8)
       activesupport (= 2.3.8)
     activesupport (2.3.8)
+    authlogic (2.1.6)
+      activesupport
     daemons (1.1.0)
     eventmachine (0.12.10)
     haml (3.0.22)
@@ -33,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authlogic
   haml
   pg
   rails (= 2.3.8)
