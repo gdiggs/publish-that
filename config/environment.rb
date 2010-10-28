@@ -6,7 +6,7 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
   
   config.middleware.use "OmniAuth::Builder" do
-    provider :twitter, 'CONSUMER_KEY', 'CONSUMER_SECRET'
+    provider :twitter, '4eNDVHFeabKScaNlwEuOFg', '4SZZiSoQrhJOXPNgF6CHqakLKR9HZ0wq7p1Ph1kg14'
     provider :facebook, 'APP_ID', 'APP_SECRET'
     provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
   end
