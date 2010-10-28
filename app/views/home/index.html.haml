@@ -1,0 +1,24 @@
+%h1 Yo. You see that? Get ready to publish that.
+
+- form_for :user do |f|
+  .user-registration
+    %h2 Register 
+    %p
+      %label First Name: 
+      = f.text_field :first_name
+    %p
+      %label Last Name: 
+      = f.text_field :last_name
+    %p
+      %label Email Address: 
+      = f.text_field :email_address
+      
+.user-login
+  %h2 Login
+  %p
+    %label User Name:
+    = text_field :user, :user_name
+  
+  %p
+    %label Password:
+    = password_field :user, :password
