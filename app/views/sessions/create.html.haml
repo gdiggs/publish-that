@@ -1,0 +1,18 @@
+%h1 Register
+  
+- form_for @user do |f|
+  .user-registration
+    %p
+      %label First Name:
+      = f.text_field :first_name, :value => @user_info[:first_name].to_s
+    %p
+      %label Last Name:
+      = f.text_field :last_name, :value => @user_info[:last_name].to_s
+    %p
+      %label Email Address:
+      = f.text_field :email_address, :value => @user_info[:email_address].to_s
+    %p
+      %label Password:
+      =f.password_field :password
+    %p
+      =f.submit

@@ -4,6 +4,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect '/auth/:provider/callback', :controller => 'sessions', :action => 'create'
   
+  map.resources :users
+
   # default routes
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
